@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokedex LaunchX</title>
+    <link href="styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="pokedex__header">
+        <button
+          class="pokedex__header__button--big button--blue-light"
+        ></button>
+        <button
+          class="pokedex__header__button--small button--red-dark"
+        ></button>
+        <button class="pokedex__header__button--small button--yellow"></button>
+        <button class="pokedex__header__button--small button--green"></button>
+      </div>
+      <div class="pokedex__screen">
+        <img
+          src="assets/pokeball.png"
+          alt="pokeball"
+          width="50%"
+          height="auto"
+          id="image"
+          class="pokedex__screen__image"
+        />
+        <div class="pokedex__screen__overlay" id="pokeInfo"></div>
+      </div>
+      <div class="pokedex__search">
+        <input
+          type="text"
+          placeholder="Pikachu"
+          id="pokeName"
+          name="pokeName"
+          onchange="handleSearchPokemon()"
+          class="pokedex__search__input"
+        />
+        <button
+          onclick="handleSearchPokemon()"
+          type="button"
+          class="pokedex__search__button button--red-dark"
+        ></button>
+      </div>
+      <div class="pokedex__bisagra"></div>
+      <div class="pokedex__screen-movements" id="screen__movements"></div>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>
